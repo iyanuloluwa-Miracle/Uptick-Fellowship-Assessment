@@ -8,7 +8,7 @@ const authController = require("../controllers/authController.js");
 router.get("/api/notes", userController.getNote);
 router.get("/api/notes/:id", userController.GetEndpoint);
 router.post("/api/notes", userController.postNote);
-router.put("/api/notes/:id", userController.putNote);
+router.patch("/api/notes/:id", userController.patchNote);
 router.delete("/api/notes/:id", userController.deleteNote);
 
 router.post("/api/users/signup", authController.createUser);

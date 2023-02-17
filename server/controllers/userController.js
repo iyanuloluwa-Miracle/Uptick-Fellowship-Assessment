@@ -14,7 +14,7 @@ exports.postNote = async (req, res) => {
   res.json(note);
 };
 
-exports.putNote = async (req, res) => {
+exports.patchNote = async (req, res) => {
   const note = await Note.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
   });
